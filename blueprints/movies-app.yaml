@@ -33,9 +33,13 @@ applications:
         - API_PORT: $API_PORT
         - AWS_INSTANCE_TYPE: $AWS_INSTANCE_TYPE
         - DATABASE_HOST: mongodb
-        
+
   - mongodb:
       #target: vm1
       input_values:
         - AWS_INSTANCE_TYPE: $AWS_INSTANCE_TYPE
-              
+
+  - ubuntu:
+      input_values:
+        - MOVIES_API: $colony.applications.movies-api.dns
+     
