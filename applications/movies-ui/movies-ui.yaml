@@ -7,10 +7,6 @@ inputs:
 - AWS_INSTANCE_TYPE: m5.large
 infrastructure:
   connectivity:
-    external:
-    - web:
-        port: $PORT
-        path: ''
   compute:
     spec:      
       azure:
