@@ -8,8 +8,8 @@ clouds:
   - AWS: eu-west-1
   
 artifacts:
-  - movies-app-ui: movies-app-ui.master.tar.gz
-  - movies-app-api: movies-app-api.master.tar.gz
+  - movies-app-ui: promotions-manager-ui.master.tar.gz
+  - movies-app-api: promotions-manager-api.master.tar.gz
 
 inputs:
 - PORT: 3000
