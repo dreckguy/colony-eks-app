@@ -41,6 +41,3 @@ applications:
         - AWS_INSTANCE_TYPE: $AWS_INSTANCE_TYPE
 
   - ubuntu:
-      input_values:
-        - MOVIES_API: $colony.applications.movies-api.dns
-     
