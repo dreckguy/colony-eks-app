@@ -4,7 +4,6 @@ inputs:
 - API_PORT: 30001
 - AZURE_VM_SIZE: Basic_A1
 - AWS_INSTANCE_TYPE: m5.large
-- MOVIES_API: $MOVIES_API
 infrastructure:
   connectivity:
     external:
