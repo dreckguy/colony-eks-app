@@ -15,7 +15,7 @@ configuration:
     script: ubuntu.sh
   healthcheck:
     timeout: 1000
-    wait_for_ports: 27017
+    script: ubuntu-command.sh
     
 source:
   image:    
