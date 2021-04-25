@@ -1,4 +1,2 @@
 #!/bin/bash
-echo 'Start nginx service'
-service nginx stop
-service nginx start
+echo '=============== Staring start script for MOVIES UI ==============='

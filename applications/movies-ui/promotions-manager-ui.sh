@@ -1,8 +1,5 @@
 #!/bin/bash
-echo '=============== Staring init script for Promotions Manager UI ==============='
-
-# save all env for debugging
-printenv > /var/log/colony-vars-"$(basename "$BASH_SOURCE" .sh)".txt
+echo '=============== Staring init script for MOVIES UI ==============='
 
 echo '==> Installing Node.js and NPM'
 apt-get update
