@@ -20,25 +20,19 @@ inputs:
 - API_BUILD_NUMBER: none
 
 applications:
-  - movies-app-ui:
+  - movies-ui:
       #target: vm1
       #instance: 3
       input_values:
         - PORT: $PORT
-        - AWS_INSTANCE_TYPE: $AWS_INSTANCE_TYPE
-        - API_PORT: $API_PORT
-      #depends_on:
-      #  - promotions-manager-api
-    
-  - promotions-manager-api:      
+        - MOVIES_API: $colony.applications.movies-api.dns
+
+  - movies-api:      
       #target: vm1
       input_values:
         - API_PORT: $API_PORT
         - AWS_INSTANCE_TYPE: $AWS_INSTANCE_TYPE
         - DATABASE_HOST: mongodb
-        - RELEASE_NUMBER: $RELEASE_NUMBER
-        - API_BUILD_NUMBER: $API_BUILD_NUMBER
-
         
   - mongodb:
       #target: vm1
