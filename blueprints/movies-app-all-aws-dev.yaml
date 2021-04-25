@@ -8,9 +8,8 @@ clouds:
   - AWS: eu-west-1
   
 artifacts:
-  - movies-app-ui: artifacts/latest/movies-app-ui.master.tar.gz
-  - movies-app-api: artifacts/latest/movies-app-api.master.tar.gz
-  - mongodb: artifacts/test-data/test-data-db.tar
+  - movies-app-ui: artifacts/movies-app-ui.master.tar.gz
+  - movies-app-api: artifacts/movies-app-api.master.tar.gz
 
 inputs:
 - PORT: 3000
