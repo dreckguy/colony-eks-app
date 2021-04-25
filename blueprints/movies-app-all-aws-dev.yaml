@@ -20,7 +20,7 @@ inputs:
 - API_BUILD_NUMBER: none
 
 applications:
-  - promotions-manager-ui:
+  - movies-app-ui:
       #target: vm1
       #instance: 3
       input_values:
@@ -30,7 +30,7 @@ applications:
       #depends_on:
       #  - promotions-manager-api
     
-  - promotions-manager-api:      
+  - movies-app-api:      
       #target: vm1
       input_values:
         - API_PORT: $API_PORT
