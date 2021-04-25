@@ -42,4 +42,4 @@ source:
   os_type: linux
 spec_version: 1
 debugging: 
-  connection_protocol: SSH
+  connection_protocol: SSH`
