@@ -16,10 +16,6 @@ inputs:
 - PORT: 3000
 - API_PORT: 3001
 - AWS_INSTANCE_TYPE: m5.large
-- RELEASE_NUMBER: none
-- API_BUILD_NUMBER: none
-- MOVIES_API: $colony.applications.movies-api.dns
-
 
 applications:
   - movies-ui:
@@ -27,7 +23,8 @@ applications:
       #instance: 3
       input_values:
         - PORT: $PORT
-        - MOVIES_API: $MOVIES_API
+        - MOVIES_API: $colony.applications.movies-api.dns
+
 
   - movies-api:      
       #target: vm1
