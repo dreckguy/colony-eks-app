@@ -33,7 +33,7 @@ source:
       tag: 4.0
     ami:
       - id: ami-0848da720bb07de35
-        region: us-central-1
+        region: eu-central-1
         username: ubuntu
   os_type: linux
   
