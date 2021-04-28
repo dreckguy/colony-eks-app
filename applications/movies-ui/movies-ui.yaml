@@ -28,7 +28,7 @@ source:
       - id: ami-0848da720bb07de35
         region: eu-central-1
         username: ubuntu
-        os_type: linux
+  os_type: linux
 spec_version: 1
 debugging:
   allow_direct_access: true
