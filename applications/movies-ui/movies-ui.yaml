@@ -4,7 +4,7 @@ inputs:
 - API_PORT: 30001
 - MOVIES_API
 - AZURE_VM_SIZE: Basic_A1
-- AWS_INSTANCE_TYPE: m5.large
+- AWS_INSTANCE_TYPE: t2.micro
 infrastructure:
   connectivity:
   compute:
@@ -23,20 +23,12 @@ configuration:
     script: movies-ui-hc.sh
 source:
   image:    
-    azure_image:
-    - urn: Canonical:UbuntuServer:16.04-LTS:latest
       username: adminuser
-    docker_image:
-    - name: ubuntu
-      tag: 16.04
     ami:
-      - id: ami-08660f1c6fb6b01e7
-        region: eu-west-1
+      - id: ami-0848da720bb07de35
+        region: eu-central-1
         username: ubuntu
-      - id: ami-0565af6e282977273
-        region: us-east-1
-        username: ubuntu
-  os_type: linux
+        os_type: linux
 spec_version: 1
 debugging:
   allow_direct_access: true

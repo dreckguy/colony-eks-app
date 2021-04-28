@@ -14,7 +14,7 @@ artifacts:
 inputs:
 - PORT: 3000
 - API_PORT: 3001
-- AWS_INSTANCE_TYPE: m5.large
+- AWS_INSTANCE_TYPE: t2.micro
 
 applications:
   - movies-ui:
