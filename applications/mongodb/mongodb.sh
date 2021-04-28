@@ -17,7 +17,7 @@ echo 'Install MongoDB'
 apt install -y mongodb
 
 echo 'Change mongoDB Listening IP Address from local 127.0.0.1 to All IPs 0.0.0.0'
-sed -i 's/127\.0\.0\.1/0\.0\.0\.0/g' /etc/mongod.conf
+sed -i 's/127\.0\.0\.1/0\.0\.0\.0/g' /etc/mongodb.conf
 
 echo 'Start the mongo service'
 systemctl start mongodb
