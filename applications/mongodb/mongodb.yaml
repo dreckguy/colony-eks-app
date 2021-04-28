@@ -9,8 +9,6 @@ infrastructure:
           port: 27017
   compute:
     spec:      
-      azure:
-        vm_size: $AZURE_VM_SIZE
       aws:
         instance_type: $AWS_INSTANCE_TYPE
         
@@ -25,12 +23,6 @@ configuration:
     
 source:
   image:    
-    azure_image:
-    - urn: Canonical:UbuntuServer:16.04-LTS:latest
-      username: adminuser
-    docker_image:
-    - name: mongo
-      tag: 4.0
     ami:
       - id: ami-0848da720bb07de35
         region: eu-central-1

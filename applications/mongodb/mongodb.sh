@@ -11,26 +11,18 @@ echo 'Create a file list for mongoDB to fetch the current repository'
 echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/4.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list
 
 echo ' Update the Ubuntu Packages'
-apt-get update 
-
+apt update -y
+apt upgrade -y
 echo 'Install MongoDB'
-apt-get install -y mongodb-org
-# prevent auto updates
-echo "mongodb-org hold" | sudo dpkg --set-selections
-echo "mongodb-org-server hold" | sudo dpkg --set-selections
-echo "mongodb-org-shell hold" | sudo dpkg --set-selections
-echo "mongodb-org-mongos hold" | sudo dpkg --set-selections
-echo "mongodb-org-tools hold" | sudo dpkg --set-selections
+apt install -y mongodb
 
 echo 'Change mongoDB Listening IP Address from local 127.0.0.1 to All IPs 0.0.0.0'
 sed -i 's/127\.0\.0\.1/0\.0\.0\.0/g' /etc/mongod.conf
 
 echo 'Start the mongo service'
-service mongod start
-
+systemctl start mongodb
 echo 'Enable automatically starting MongoDB when the system starts.'
-sudo systemctl enable mongod
-
+systemctl enable mongodb
 echo 'Extracting user data db artifact'
 mkdir $ARTIFACTS_PATH/drop
 tar -xvf $ARTIFACTS_PATH/*.* -C $ARTIFACTS_PATH/drop/
