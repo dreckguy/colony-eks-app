@@ -15,7 +15,7 @@ apt update -y
 apt upgrade -y
 echo 'Install MongoDB'
 apt install -y mongodb
-
+<< EOF
 echo 'Change mongoDB Listening IP Address from local 127.0.0.1 to All IPs 0.0.0.0'
 sed -i 's/127\.0\.0\.1/0\.0\.0\.0/g' /etc/mongodb.conf
 
@@ -37,3 +37,5 @@ for f in ./*.json; do
 	collection="${temp_var:2}"
 	mongoimport --db promo-manager --collection $collection --file $ARTIFACTS_PATH/drop/$f
 done
+
+EOF
