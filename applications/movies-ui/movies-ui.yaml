@@ -23,8 +23,8 @@ configuration:
     script: movies-ui-hc.sh
 source:
   image:    
-      username: adminuser
-      ami:
+    username: adminuser
+    ami:
       - id: ami-0848da720bb07de35
         region: eu-central-1
         username: ubuntu
