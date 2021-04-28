@@ -20,9 +20,9 @@ infrastructure:
         instance_type: $AWS_INSTANCE_TYPE
 configuration:
   start:
-    script: promotions-manager-api-command.sh
+    script: movies-api-command.sh
   initialization:
-    script: promotions-manager-api.sh
+    script: movies-api.sh
   healthcheck:
     timeout: 1000
     script: movies-api-hc.sh
