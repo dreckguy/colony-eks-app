@@ -38,5 +38,6 @@ source:
         username: ubuntu
   os_type: linux
 spec_version: 1
-debugging: 
+debugging:
+  allow_direct_access: true
   connection_protocol: SSH
