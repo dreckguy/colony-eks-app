@@ -19,7 +19,7 @@ echo 'Change mongoDB Listening IP Address from local 127.0.0.1 to All IPs 0.0.0.
 sed -i 's/127.0.0.1/0.0.0.0/g' /etc/mongodb.conf
 
 echo 'Start the mongo service'
-systemctl start mongodb
+systemctl restart mongodb
 << EOF
 echo 'Enable automatically starting MongoDB when the system starts.'
 systemctl enable mongodb
