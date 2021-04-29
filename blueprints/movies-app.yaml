@@ -10,23 +10,7 @@ clouds:
 artifacts:
   - movies-ui: movies-ui.zip
   - movies-api: movies-api.zip
-
 applications:
   - movies-ui:
-      #target: vm1
-      #instance: 3
-      input_values:
-              - PORT: 8000
-
-
   - movies-api:      
-      #target: vm1
-      input_values:
-        - API_PORT: $API_PORT
-        - AWS_INSTANCE_TYPE: $AWS_INSTANCE_TYPE
-        - DATABASE_HOST: mongodb
-
   - mongodb:
-      #target: vm1
-      input_values:
-        - AWS_INSTANCE_TYPE: $AWS_INSTANCE_TYPE
