@@ -8,8 +8,8 @@ clouds:
   - AWS: eu-central-1
   
 artifacts:
-  - movies-ui: artifacts/latest/promotions-manager-ui.master.tar.gz
-  - mongodb: artifacts/test-data/test-data-db.tar
+  - movies-ui: movies-ui.zip
+  - movies-api: movies-api.zip
 
 inputs:
 - PORT: 3000
@@ -21,9 +21,6 @@ applications:
       #target: vm1
       #instance: 3
       input_values:
-        - PORT: $PORT
-        - MOVIES_API: $colony.applications.movies-api.dns
-
 
   - movies-api:      
       #target: vm1

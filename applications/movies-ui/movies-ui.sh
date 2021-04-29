@@ -7,5 +7,5 @@ apt update -y
 apt install -y unzip nodejs
 
 echo '==> Extract ui artifact to app'
-unzip $ARTIFACTS_PATH *.zip -d app
+unzip $ARTIFACTS_PATH/*.zip -d app
 ls app
