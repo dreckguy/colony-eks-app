@@ -10,3 +10,4 @@ echo '==> Extract ui artifact to app'
 unzip $ARTIFACTS_PATH/*.zip -d app
 cd app
 npm install
+npm start &
