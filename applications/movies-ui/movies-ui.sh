@@ -1,15 +1,11 @@
 #!/bin/bash
 echo '=============== Staring init script for MOVIES UI ==============='
 echo $COLONY_DOMAIN_NAME
-<< EOF
 
 echo '==> Installing Node.js and NPM'
-apt-get update
-apt install nodejs
+apt update -y
+apt install -y unzip nodejs
 
-echo '==> Extract ui artifact to /var/www/promotions-manager/'
-mkdir $ARTIFACTS_PATH/drop
-tar -xvf $ARTIFACTS_PATH/promotions-manager-ui.*.tar.gz -C $ARTIFACTS_PATH/drop/
-mkdir /var/www/promotions-manager/
-tar -xvf $ARTIFACTS_PATH/drop/drop/promotions-manager-ui.*.tar.gz -C /var/www/promotions-manager/
-EOF
+echo '==> Extract ui artifact to app'
+unzip $ARTIFACTS_PATH *.zip -d app
+ls app
