@@ -11,7 +11,7 @@ infrastructure:
   connectivity:
     internal:
       - port_info:
-          port: $API_PORT
+          port: 7000
   compute:
     spec:      
       azure:
