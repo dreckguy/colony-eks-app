@@ -2,7 +2,6 @@ kind: application
 inputs:
 - PORT: 3000
 - API_PORT: 30001
-- MOVIES_API
 - AZURE_VM_SIZE: Basic_A1
 - AWS_INSTANCE_TYPE: t2.micro
 infrastructure:
