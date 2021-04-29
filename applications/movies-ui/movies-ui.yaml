@@ -6,6 +6,10 @@ inputs:
 - AWS_INSTANCE_TYPE: t2.micro
 infrastructure:
   connectivity:
+    external:
+    - web:
+        port: 8000
+        path: ''
   compute:
     spec:      
       azure:
