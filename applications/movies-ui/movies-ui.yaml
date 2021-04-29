@@ -12,10 +12,9 @@ infrastructure:
         path: ''
   compute:
     spec:      
-      azure:
-        vm_size: $AZURE_VM_SIZE
+      
       aws:
-        instance_type: $AWS_INSTANCE_TYPE
+        instance_type: t2.micro
 configuration:
   start:
     script: movies-ui-command.sh
