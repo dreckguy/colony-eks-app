@@ -16,7 +16,7 @@ configuration:
     script: movies-api.sh
   healthcheck:
     timeout: 1000
-    script: movies-api-hc.sh
+    wait_for_ports: ALL
 source:
   image:    
     azure_image:
