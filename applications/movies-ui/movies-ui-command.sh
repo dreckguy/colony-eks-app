@@ -1,5 +1,5 @@
 #!/bin/bash
 echo '=============== Staring start script for MOVIES UI ==============='
 cd app
-export PORT=8000 export REACT_APP_COLONY_DOMAIN_NAME=bla
+export PORT=8000 export REACT_APP_COLONY_DOMAIN_NAME=$COLONY_DOMAIN_NAME
 npm start &
