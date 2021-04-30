@@ -2,7 +2,7 @@ import axios from 'axios'
 const {COLONY_DOMAIN_NAME} = process.env
 
 const api = axios.create({
-    BASE_URL: `http://movies-api.${REACT_APP_COLONY_DOMAIN_NAME}:7000/api`,
+    BASE_URL: `http://movies-api.${COLONY_DOMAIN_NAME}:7000/api`,
 })
 
 export const insertMovie = payload => api.post(`${BASE_URL}/movie`, payload)

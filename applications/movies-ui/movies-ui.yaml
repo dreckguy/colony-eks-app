@@ -20,7 +20,7 @@ configuration:
     script: movies-ui.sh
   healthcheck:
     timeout: 1000
-    wait_for_ports: ALL
+    script: movies-ui-hc.sh
 source:
   image:    
     username: adminuser
