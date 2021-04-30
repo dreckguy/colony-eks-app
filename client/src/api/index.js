@@ -1,5 +1,6 @@
 import axios from 'axios'
-const {COLONY_DOMAIN_NAME} = process.env
+const COLONY_DOMAIN_NAME = process.env.REACT_APP_COLONY_DOMAIN_NAME
+console.log(`COLONY_DOMAIN_NAME:${COLONY_DOMAIN_NAME}`)
 
 const api = axios.create({
     BASE_URL: `http://movies-api.${COLONY_DOMAIN_NAME}:7000/api`,
