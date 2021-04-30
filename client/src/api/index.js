@@ -3,14 +3,14 @@ const COLONY_DOMAIN_NAME = process.env.REACT_APP_COLONY_DOMAIN_NAME
 console.log(`COLONY_DOMAIN_NAME:${COLONY_DOMAIN_NAME}`)
 
 const api = axios.create({
-    BASE_URL: `http://movies-api.${COLONY_DOMAIN_NAME}:7000/api`,
+    baseURL: `http://movies-api.${COLONY_DOMAIN_NAME}:7000/api`,
 })
 
-export const insertMovie = payload => api.post(`${BASE_URL}/movie`, payload)
+export const insertMovie = payload => api.post('/movie', payload)
 export const getAllMovies = () => api.get(`/movies`)
-export const updateMovieById = (id, payload) => api.put(`${BASE_URL}/movie/${id}`, payload)
-export const deleteMovieById = id => api.delete(`${BASE_URL}/movie/${id}`)
-export const getMovieById = id => api.get(`${BASE_URL}/movie/${id}`)
+export const updateMovieById = (id, payload) => api.put(`/movie/${id}`, payload)
+export const deleteMovieById = id => api.delete(`/movie/${id}`)
+export const getMovieById = id => api.get(`/movie/${id}`)
 
 const apis = {
     insertMovie,
