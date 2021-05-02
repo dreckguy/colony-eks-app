@@ -19,7 +19,7 @@ configuration:
     script: mongodb.sh  # will install mongodb 3.4
   healthcheck:
     timeout: 1000
-      wait_for_ports: ALL    
+    wait_for_ports: ALL    
 source:
   image:    
     ami:
