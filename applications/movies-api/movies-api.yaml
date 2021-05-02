@@ -12,7 +12,7 @@ infrastructure:
         instance_type: t2.micro
 configuration:
   start:
-    wait_for_ports: ALL
+    script: movies-api-command.sh
   initialization:
     script: movies-api.sh
   healthcheck:
