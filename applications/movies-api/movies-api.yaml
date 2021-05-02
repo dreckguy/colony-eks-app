@@ -5,7 +5,7 @@ infrastructure:
     external:
       - port_info:
           port: 7000
-      path: ''
+          path: ''
   compute:
     spec:      
     aws:
