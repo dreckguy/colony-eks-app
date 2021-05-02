@@ -1,5 +1,5 @@
 #!/bin/bash
 echo '=============== Staring start script for MOVIES API ==============='
 cd app
-export MOVIES_API=$COLONY_PUBLIC_ADDRESS:7000
+export DOMAIN_NAME=$COLONY_DOMAIN_NAME
 npm start &
