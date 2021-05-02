@@ -12,13 +12,13 @@ infrastructure:
         instance_type: t2.micro
 configuration:
   start:
-    script: movies-api-command.sh
+    wait_for_ports: ALL
   initialization:
     script: movies-api.sh
   healthcheck:
     timeout: 1000
-    script: movies-api-hc.sh
-source:
+      wait_for_ports: ALL
+    source:
   image:    
     azure_image:
     - urn: Canonical:UbuntuServer:16.04-LTS:latest
