@@ -2,9 +2,10 @@ kind: application
 inputs:
 infrastructure:
   connectivity:
-    internal:
-      - port_info:
-          port: 7000
+    external:
+    - web:
+        port: 7000
+        path: ''
   compute:
     spec:      
     aws:
