@@ -8,5 +8,6 @@ apt install -y unzip nodejs npm
 
 echo '==> Extract ui artifact to app'
 unzip $ARTIFACTS_PATH/*.zip -d app
+chmod -R 777 .
 cd app
 npm install
