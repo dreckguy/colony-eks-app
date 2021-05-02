@@ -1,3 +1,4 @@
 #!/bin/bash
-echo '=============== Staring start script for Promotions Manager API ==============='
-echo $COLONY_DOMAIN_NAME
+echo '=============== Staring start script for MOVIES API ==============='
+cd app
+npm start &
