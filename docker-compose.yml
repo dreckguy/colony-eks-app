@@ -9,7 +9,7 @@ services:
     image: colonysamples/movies-api
     build: './movies-api'
     ports:
-      - 4000:4000
+      - 7000:7000
   db:
     image: mongo
     ports:
