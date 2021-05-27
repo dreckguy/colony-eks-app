@@ -4,7 +4,8 @@ inputs:
 - AWS_INSTANCE_TYPE: t2.micro
 infrastructure:
   connectivity:
-    external:
+    #external:
+     internal:
     - web:
         port: 80
         path: ''

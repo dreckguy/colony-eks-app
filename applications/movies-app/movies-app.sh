@@ -6,6 +6,9 @@ apt upgrade -y
 apt install -y docker.io
 systemctl enable --now docker
 docker --version
+
+curl -L "https://github.com/docker/compose/releases/download/1.26.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
 docker–compose –version
 
 echo '==> Extract ui artifact to app'
