@@ -26,7 +26,7 @@ source:
     username: adminuser
     ami:
       - id: ami-0848da720bb07de35
-        region: eu-central-1
+        region: eu-west-1
         username: ubuntu
   os_type: linux
 spec_version: 1
