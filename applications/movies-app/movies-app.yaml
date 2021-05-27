@@ -3,6 +3,11 @@ inputs:
 - AZURE_VM_SIZE: Basic_A1
 - AWS_INSTANCE_TYPE: t2.micro
 infrastructure:
+  connectivity:
+    external:
+    - web:
+        port: 80
+        path: ''
   compute:
     spec:        
       aws:
