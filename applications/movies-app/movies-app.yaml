@@ -15,9 +15,9 @@ infrastructure:
         instance_type: t2.micro
 configuration:
   start:
-    script: movies-ui-command.sh
+    script: movies-app-command.sh
   initialization:
-    script: movies-ui.sh
+    script: movies-app.sh
   healthcheck:
     timeout: 1000
     wait_for_ports: ALL
