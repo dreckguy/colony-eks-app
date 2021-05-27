@@ -1,10 +1,8 @@
 import axios from 'axios'
-const COLONY_DOMAIN_NAME = process.env.REACT_APP_COLONY_DOMAIN_NAME
-console.log(`COLONY_DOMAIN_NAME:${COLONY_DOMAIN_NAME}`)
+const API_URL = `http://${window.location.hostname}:7000/api`
+console.log(`API URL: ${API_URL}`)
 
-const api = axios.create({
-    baseURL: `http://movies-app.${window.location.hostname}:7000/api`,
-})
+const api = axios.create({baseURL: API_URL})
 
 export const insertMovie = payload => api.post('/movie', payload)
 export const getAllMovies = () => api.get(`/movies`)
