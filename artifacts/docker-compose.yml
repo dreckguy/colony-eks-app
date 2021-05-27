@@ -8,6 +8,8 @@ services:
     image: colonysamples/movies-api
     ports:
       - 7000:7000
+    environment: 
+      - COLONY_PUBLIC_ADDRESS
   db:
     image: mongo
     ports:
