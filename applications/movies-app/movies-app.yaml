@@ -8,6 +8,9 @@ infrastructure:
     - web:
         port: 80
         path: ''
+    - api:
+        port: 7000
+        path: ''
   compute:
     spec:        
       aws:
