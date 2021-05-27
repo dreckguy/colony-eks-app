@@ -2,15 +2,12 @@ spec_version: 1
 kind: blueprint
 metadata:
   description: >
-    All in one deployment of our promotions manager
+    All in one deployment of movies-app
     
 clouds: 
-  - AWS: eu-central-1
+  - AWS: eu-west-1
   
 artifacts:
-  - movies-ui: movies-ui.zip
-  - movies-api: movies-api.zip
+  - movies-app: docker-compose.yml
 applications:
-  - movies-ui:
-  - movies-api:      
-  - mongodb:
+  - movies-app:
