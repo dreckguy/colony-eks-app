@@ -1,9 +1,9 @@
-const {COLONY_DOMAIN_NAME} = process.env
+//const {COLONY_DOMAIN_NAME} = process.env
 
 const mongoose = require('mongoose')
 
 mongoose
-    .connect(`mongodb://mongodb.${COLONY_DOMAIN_NAME}:27017/cinema`, { useNewUrlParser: true })
+    .connect(`mongodb://db:27017/cinema`, { useNewUrlParser: true })
     .catch(e => {
         console.error('Connection error', e.message)
     })
