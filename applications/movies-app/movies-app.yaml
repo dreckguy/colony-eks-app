@@ -25,7 +25,7 @@ source:
   image:    
     username: adminuser
     ami:
-      - id: ami-0848da720bb07de35
+      - id: ami-0213344887e47003a
         region: eu-west-1
         username: ubuntu
   os_type: linux
