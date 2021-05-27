@@ -4,12 +4,11 @@ inputs:
 - AWS_INSTANCE_TYPE: t2.micro
 infrastructure:
     << 'MULTILINE-COMMENT'
-    connectivity:
+  connectivity:
       external:
         - web:
             port: 80
             path: ''
-    
 MULTILINE-COMMENT
 
   compute:
