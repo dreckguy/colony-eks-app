@@ -15,6 +15,9 @@ infrastructure:
     spec:        
       aws:
         instance_type: t2.micro
+      kubernetes:
+        cpu: 250m
+        ram: 64Mi
 configuration:
   start:
     script: movies-app-command.sh
@@ -30,6 +33,11 @@ source:
       - id: ami-0213344887e47003a
         region: eu-west-1
         username: ubuntu
+    docker_image:
+       - name: colonysamples/movies-app-ui
+         tag: latest
+         username: root
+    
   os_type: linux
 spec_version: 1
 debugging:

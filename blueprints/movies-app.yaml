@@ -5,7 +5,7 @@ metadata:
     All in one deployment of movies-app
     
 clouds: 
-  - AWS: eu-west-1
+  - AWS/EKS
   
 artifacts:
   - movies-app: docker-compose.yml
