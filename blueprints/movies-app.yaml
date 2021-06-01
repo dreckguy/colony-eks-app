@@ -7,7 +7,5 @@ metadata:
 clouds: 
   - AWS/EKS
   
-artifacts:
-  - movies-app: docker-compose.yml
 applications:
-  - movies-app:
+  - movies-ui:

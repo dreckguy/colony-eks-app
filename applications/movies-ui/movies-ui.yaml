@@ -19,10 +19,6 @@ infrastructure:
         cpu: 250m
         ram: 64Mi
 configuration:
-  start:
-    script: movies-app-command.sh
-  initialization:
-    script: movies-app.sh
   healthcheck:
     timeout: 1000
     script: movies-app-hc.sh
