@@ -10,7 +10,7 @@ infrastructure:
     spec:        
       kubernetes:
         cpu: 250m
-        ram: 64Mi
+        ram: 200Mi
 configuration:
   start:
     script: movies-ui-command.sh
