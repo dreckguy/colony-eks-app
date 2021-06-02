@@ -12,6 +12,8 @@ infrastructure:
         cpu: 250m
         ram: 64Mi
 configuration:
+  start:
+    script: 
   healthcheck:
     timeout: 1000
     wait_for_ports: 80
@@ -19,12 +21,8 @@ source:
   image:    
     username: adminuser
     docker_image:
-       - name: nginx
+       - name: colonysamples/movies-ui
          tag: latest
          username: root
-    
   os_type: linux
 spec_version: 1
-debugging:
-  allow_direct_access: true
-  connection_protocol: SSH
