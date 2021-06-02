@@ -30,7 +30,7 @@ source:
         region: eu-west-1
         username: ubuntu
     docker_image:
-       - name: colonysamples/movies-ui
+       - name: nginx
          tag: latest
          username: root
     
