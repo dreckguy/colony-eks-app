@@ -2,10 +2,9 @@ spec_version: 1
 kind: blueprint
 metadata:
   description: >
-    All in one deployment of movies-app
+    EKS deployment of movies-app
     
 clouds: 
   - AWS/EKS
-  
 applications:
   - movies-ui:

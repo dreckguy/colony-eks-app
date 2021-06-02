@@ -1,20 +1,13 @@
 kind: application
 inputs:
-- AZURE_VM_SIZE: Basic_A1
-- AWS_INSTANCE_TYPE: t2.micro
 infrastructure:
   connectivity:
     external:
     - web:
         port: 80
         path: ''
-    - api:
-        port: 7000
-        path: ''
   compute:
     spec:        
-      aws:
-        instance_type: t2.micro
       kubernetes:
         cpu: 250m
         ram: 64Mi
@@ -25,10 +18,6 @@ configuration:
 source:
   image:    
     username: adminuser
-    ami:
-      - id: ami-0213344887e47003a
-        region: eu-west-1
-        username: ubuntu
     docker_image:
        - name: nginx
          tag: latest
