@@ -1,11 +1,10 @@
 kind: application
 inputs:
-  - API_URL
 infrastructure:
   connectivity:
     external:
     - web:
-        port: ALL
+        port: 80
         path: ''
   compute:
     spec:        
