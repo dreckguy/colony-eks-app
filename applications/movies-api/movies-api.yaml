@@ -20,7 +20,7 @@ source:
   image:    
     username: adminuser
     docker_image:
-       - name: colonysamples/movies-ui
+       - name: colonysamples/movies-api
          tag: latest
          username: root
   os_type: linux
