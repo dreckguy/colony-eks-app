@@ -8,3 +8,4 @@ clouds:
   - AWS/EKS
 applications:
   - movies-ui:
+  - movies-api:
