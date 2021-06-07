@@ -1,5 +1,6 @@
 kind: application
 inputs:
+  - API_URL
 infrastructure:
   connectivity:
     external:

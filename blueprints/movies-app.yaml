@@ -8,4 +8,6 @@ clouds:
   - AWS/EKS
 applications:
   - movies-ui:
+      input_values:
+        - API_URL: $colony.applications.movies-api.dns
   - movies-api:
