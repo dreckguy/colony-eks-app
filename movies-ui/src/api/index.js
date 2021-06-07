@@ -1,5 +1,5 @@
 import axios from 'axios'
-const {API_URL} = process.env
+const API_URL= process.env['REACT_APP_API_URL']
 console.log(`API URL: ${API_URL}`)
 
 const api = axios.create({baseURL:`http://${API_URL}:7000/api`})
