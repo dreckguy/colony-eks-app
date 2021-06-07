@@ -2,14 +2,17 @@ version: "3.3"
 services:
   ui:
     image: colonysamples/movies-ui
-    build: './movies-ui'
-    ports:
+    build:
+      context: ./movies-ui
+      dockerfile: Dockerfile.dev
+      ports:
       - 80:80
   api:
     image: colonysamples/movies-api
-    build: './movies-api'
-    ports:
-      - 7000:7000
+    build:
+      context: ./movies-api
+      ports:
+        - 7000:7000
   db:
     image: mongo
     ports:

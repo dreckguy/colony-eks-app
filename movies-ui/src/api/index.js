@@ -1,8 +1,8 @@
 import axios from 'axios'
-const API_URL = `http://${window.location.hostname}:7000/api`
+const {API_URL} = process.env
 console.log(`API URL: ${API_URL}`)
 
-const api = axios.create({baseURL: API_URL})
+const api = axios.create({baseURL:`http://${API_URL}:7000/api`})
 
 export const insertMovie = payload => api.post('/movie', payload)
 export const getAllMovies = () => api.get(`/movies`)
