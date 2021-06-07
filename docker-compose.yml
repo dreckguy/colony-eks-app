@@ -5,14 +5,14 @@ services:
     build:
       context: ./movies-ui
       dockerfile: Dockerfile.dev
-      ports:
+    ports:
       - 80:80
   api:
     image: colonysamples/movies-api
     build:
       context: ./movies-api
-      ports:
-        - 7000:7000
+    ports:
+      - 7000:7000
   db:
     image: mongo
     ports:
