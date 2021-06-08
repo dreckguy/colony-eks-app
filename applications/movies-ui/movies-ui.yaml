@@ -1,6 +1,6 @@
 kind: application
 inputs:
-  - API_URL
+  - REACT_APP_API_URL
 infrastructure:
   connectivity:
     external:

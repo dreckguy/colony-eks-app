@@ -9,5 +9,6 @@ clouds:
 applications:
   - movies-ui:
       input_values:
-        - API_URL: $colony.applications.movies-api.dns
+        #- REACT_APP_API_URL: $colony.applications.movies-api.dns
+        - REACT_APP_API_URL: OPHIRUS_WAS HERE!
   - movies-api:
