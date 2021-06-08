@@ -5,7 +5,8 @@ metadata:
     EKS deployment of movies-app
     
 clouds: 
-  - AWS/EKS
+  #- AWS/EKS
+  - AWS: eu-west-1
 applications:
   - movies-ui:
       input_values:
