@@ -2,10 +2,10 @@ kind: application
 inputs:
 infrastructure:
   connectivity:
-    external:
-    - web:
-        port: 27017
-        path: ''
+    internal:
+      - port_info:
+          port: 27017
+
   compute:
     spec:        
       kubernetes:
