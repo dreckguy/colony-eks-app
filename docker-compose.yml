@@ -9,8 +9,7 @@ services:
       - REACT_APP_API_URL=localhost
   api:
     image: colonysamples/movies-api
-    build:
-      context: ./movies-api
+    build: ./movies-api
     ports:
       - 7000:7000
   db:

@@ -4,7 +4,7 @@ infrastructure:
   connectivity:
     external:
     - web:
-        port: 80
+        port: 27017
         path: ''
   compute:
     spec:        
@@ -12,15 +12,15 @@ infrastructure:
         cpu: 250m
 configuration:
   start:
-    script: movies-ui-command.sh
+    script: mongodb-command.sh
   healthcheck:
     timeout: 1000
-    wait_for_ports: 80
+    wait_for_ports: ALL
 source:
   image:    
     username: adminuser
     docker_image:
-       - name: colonysamples/movies-ui
+       - name: mongo
          tag: latest
          username: root
   os_type: linux

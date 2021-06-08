@@ -7,8 +7,10 @@ clouds:
   - AWS/EKS
 applications:
   - movies-ui:
-      input_values:
-        - REACT_APP_API_URL: $colony.environment.public_address
-      depends_on:
-        - movies-api
+      
   - movies-api:
+      input_values:
+        - DB_URL: $colony.applications.mongodb.dns
+      depends_on:
+        - mongodb
+  - mongodb:
