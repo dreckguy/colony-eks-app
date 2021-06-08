@@ -3,10 +3,8 @@ kind: blueprint
 metadata:
   description: >
     EKS deployment of movies-app
-    
 clouds: 
-  #- AWS/EKS
-  - AWS: eu-west-1
+  - AWS/EKS
 applications:
   - movies-ui:
       input_values:
