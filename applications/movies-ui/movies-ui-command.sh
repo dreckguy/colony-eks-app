@@ -1,2 +1,2 @@
-#nginx -g 'daemon off;'
-npm start
+nginx -g 'daemon off;'
+#npm start
