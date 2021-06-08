@@ -9,7 +9,7 @@ clouds:
 applications:
   - movies-ui:
       input_values:
-        - REACT_APP_API_URL: $colony.applications.movies-api.dns
+        - REACT_APP_API_URL: $colony.environment.public_address
       depends_on:
         - movies-api
   - movies-api:
