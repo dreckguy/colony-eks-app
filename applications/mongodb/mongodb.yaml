@@ -2,7 +2,7 @@ kind: application
 inputs:
 infrastructure:
   connectivity:
-    internal:
+    external:
       - port_info:
           port: 27017
 
