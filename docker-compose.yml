@@ -2,9 +2,7 @@ version: "3.3"
 services:
   ui:
     image: colonysamples/movies-ui
-    build:
-      context: ./movies-ui
-      dockerfile: Dockerfile.dev
+    build: ./movies-ui
     ports:
       - 80:80
     environment:
