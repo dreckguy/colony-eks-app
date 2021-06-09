@@ -8,5 +8,9 @@ content-type: application/json
 }
 ### LONG TOKEN ###
 
-POST https://devops.cloudshellcolony.com/api/token/longtoken
-
+POST https://devops.cloudshellcolony.com/api/token/longtoken HTTP/1.1
+content-type: application/json
+{
+  "email": "ophir.h@quali.com",
+  "password": "Bla1Bla2Bla3!"
+}

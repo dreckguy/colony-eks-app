@@ -1,2 +1,2 @@
-#export DB_URL=$DB_URL
+#/bin/bash
 npm start
