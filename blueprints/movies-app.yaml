@@ -11,6 +11,6 @@ applications:
   - movies-api:
       input_values:
         - DB_URL: $colony.applications.mongodb.dns
-      depends_on:
-        - mongodb
+      #depends_on:
+        #- mongodb
   - mongodb:
