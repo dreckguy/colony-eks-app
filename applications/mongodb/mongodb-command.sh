@@ -1,2 +1,2 @@
 #!/bin/bash
-mongod
+mongod --fork

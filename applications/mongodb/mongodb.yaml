@@ -17,7 +17,7 @@ configuration:
   healthcheck:
     timeout: 1000
     wait_for_ports: ALL
-    # script: mongodb-hc.sh
+    script: mongodb-hc.sh
 source:
   image:    
     username: adminuser
