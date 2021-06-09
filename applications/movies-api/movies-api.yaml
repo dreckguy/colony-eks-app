@@ -4,9 +4,9 @@ inputs:
 infrastructure:
   connectivity:
     external:
-    - web:
-        port: 7000
-        path: ''
+      - port_info:
+          port: 7000
+          path: ''
   compute:
     spec:        
       kubernetes:

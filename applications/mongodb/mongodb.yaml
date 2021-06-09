@@ -3,7 +3,7 @@ inputs:
 infrastructure:
   connectivity:
     external:
-     - web:
+     - port_info:
         port: 27017
         path: ''
 
