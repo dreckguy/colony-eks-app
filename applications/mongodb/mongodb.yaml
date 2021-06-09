@@ -22,7 +22,7 @@ source:
   image:    
     username: adminuser
     docker_image:
-       - name: nginx
+       - name: mongo
          tag: latest
          username: root
   os_type: linux
