@@ -4,7 +4,7 @@ infrastructure:
   connectivity:
     external:
      - web:
-        port: 27017
+        port: 80
         path: ''
 
   compute:
@@ -22,7 +22,7 @@ source:
   image:    
     username: adminuser
     docker_image:
-       - name: mongo
+       - name: nginx
          tag: latest
          username: root
   os_type: linux
