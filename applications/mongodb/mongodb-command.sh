@@ -1,2 +1,3 @@
 #!/bin/bash
-mongod
+#mongod
+nginx -g 'daemon off;'
