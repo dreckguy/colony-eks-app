@@ -1,6 +1,6 @@
 #!/bin/bash
 ## IMITATE PASSING THE ENTRYPOINT THE "mongod" CMD
-set -- "mongod"
+#set -- "mongod"
 set -Eeuo pipefail
 
 if [ "${1:0:1}" = '-' ]; then
