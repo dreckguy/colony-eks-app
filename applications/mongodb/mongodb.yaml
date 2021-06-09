@@ -2,7 +2,7 @@ kind: application
 inputs:
 infrastructure:
   connectivity:
-    internal:
+    external:
      - port_info:
         port: 27017
         path: ''
@@ -13,7 +13,7 @@ infrastructure:
         cpu: 250m
 configuration:
   start:
-    script: mongodb-command.sh
+    script: docker-entrypoint.sh
   healthcheck:
     timeout: 1000
     #wait_for_ports: ALL
