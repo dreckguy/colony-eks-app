@@ -4,7 +4,7 @@ infrastructure:
   connectivity:
     external:
      - web:
-        port: 80
+        port: 27017
         path: ''
 
   compute:
