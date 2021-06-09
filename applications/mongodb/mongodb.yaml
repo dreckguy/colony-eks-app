@@ -2,7 +2,7 @@ kind: application
 inputs:
 infrastructure:
   connectivity:
-    external:
+    internal:
      - port_info:
         port: 27017
         path: ''
