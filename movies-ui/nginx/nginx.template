@@ -31,7 +31,7 @@ http {
             listen 80 default_server;
             root /usr/share/nginx/html;
             location /api{
-                proxy_pass http://$API_URL;
+                proxy_pass http://${API_URL}:7000;
             }
         }
 }
