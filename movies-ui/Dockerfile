@@ -11,6 +11,11 @@ RUN npm run build
 
 # production environment
 FROM nginx:1.15.8-alpine
+RUN rm /etc/nginx/conf.d/default.conf
+COPY nginx/nginx.template /etc/nginx/
+COPY nginx/start-docker.sh .
+ENV PATH /:$PATH
 COPY --from=builder /usr/src/app/build /usr/share/nginx/html
 EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+ENV API_URL "localhost"
+CMD "start-docker.sh"

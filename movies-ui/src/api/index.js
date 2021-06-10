@@ -1,5 +1,6 @@
 import axios from 'axios'
-const API_URL= window.location.href
+//const API_URL= window.location.href
+const {API_URL} = process.env
 console.log(`API URL: ${API_URL}`)
 
 const api = axios.create({baseURL:`http://${API_URL}:7000/api`})
