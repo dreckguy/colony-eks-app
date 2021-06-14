@@ -3,7 +3,7 @@ inputs:
   - DB_URL
 infrastructure:
   connectivity:
-    external:
+    internal:
       - port_info:
           port: 7000
           path: ''
