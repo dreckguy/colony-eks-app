@@ -13,7 +13,7 @@ infrastructure:
         cpu: 250m
 configuration:
   start:
-    command: movies-ui-command.sh
+    script: movies-ui-command.sh
   healthcheck:
     timeout: 100
     wait_for_ports: ALL
