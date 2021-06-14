@@ -1,2 +1,2 @@
 export API_URL=$API_URL
-./start-docker.sh
+sh -c start-docker.sh
