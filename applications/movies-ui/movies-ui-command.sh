@@ -1,1 +1,2 @@
-nginx -g 'daemon off;'
+export $API_URL
+./start-docker.sh
