@@ -11,6 +11,7 @@ RUN npm run build
 
 # production environment
 FROM nginx:1.15.8-alpine
+RUN apk add curl
 RUN rm /etc/nginx/conf.d/default.conf
 COPY nginx/nginx.template /etc/nginx/
 COPY nginx/start-docker.sh /usr/local/bin
