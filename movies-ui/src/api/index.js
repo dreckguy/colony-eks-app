@@ -1,9 +1,8 @@
 import axios from 'axios'
-//const API_URL= window.location.href
-const {API_URL} = process.env
-console.log(`API URL: ${API_URL}`)
+let API_URL= window.location.origin
+console.log(`API URL: ${API_URL}  // Using a reverse proxy on "/api" `)
 
-const api = axios.create({baseURL:`http://${API_URL}:7000/api`})
+const api = axios.create({baseURL:`${API_URL}:7000/api`})
 
 export const insertMovie = payload => api.post('/movie', payload)
 export const getAllMovies = () => api.get(`/movies`)
