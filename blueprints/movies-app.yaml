@@ -10,7 +10,7 @@ applications:
       depends_on:
         - movies-api
       input_values:
-        - REACT_APP_API_URL: $colony.applications.movies-api.dns
+        - API_URL: $colony.applications.movies-api.dns
   - movies-api:
       input_values:
         - DB_URL: $colony.applications.mongodb.dns
