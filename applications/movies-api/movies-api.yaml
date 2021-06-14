@@ -15,7 +15,7 @@ configuration:
   start:
     script: movies-api-command.sh
   healthcheck:
-    timeout: 1000
+    timeout: 100
     wait_for_ports: ALL
 source:
   image:    

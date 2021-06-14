@@ -13,9 +13,9 @@ infrastructure:
         cpu: 250m
 configuration:
   start:
-    script: movies-ui-command.sh
+    command: start-docker.sh
   healthcheck:
-    timeout: 1000
+    timeout: 100
     wait_for_ports: ALL
 source:
   image:    
