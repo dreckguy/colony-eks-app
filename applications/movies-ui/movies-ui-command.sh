@@ -1,2 +1,2 @@
 #!/bin/sh
-start-docker.sh
+sh /usr/local/bin/start-docker.sh
