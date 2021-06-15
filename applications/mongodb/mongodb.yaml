@@ -16,8 +16,7 @@ configuration:
     command: docker-entrypoint.sh mongod
   healthcheck:
     timeout: 1000
-    #wait_for_ports: ALL
-    script: mongodb-hc.sh
+    wait_for_ports: ALL
 source:
   image:    
     username: adminuser
