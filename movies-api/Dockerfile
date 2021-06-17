@@ -1,4 +1,4 @@
-FROM node:14.6.0-alpine
+FROM node:lts-alpine
 RUN apk add curl
 COPY . .
 RUN npm install
