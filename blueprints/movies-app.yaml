@@ -13,8 +13,7 @@ applications:
         - API_URL: $colony.applications.movies-api.dns
   - movies-api:
       input_values:
-        #- DB_URL: $colony.applications.mongodb.dns
-        - DB_URL: www.db.com
+        - DB_URL: $colony.applications.mongodb.dns
       depends_on:
         - mongodb
   - mongodb:
