@@ -12,6 +12,8 @@ infrastructure:
       kubernetes:
         cpu: 250m
 configuration:
+  initialization:
+    script: movies-api.sh
   start:
     script: movies-api-command.sh
   healthcheck:
