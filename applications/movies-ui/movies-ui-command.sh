@@ -1,3 +1,3 @@
 #!/bin/sh
-export API_URL=$(printenv | grep -i 'api'| grep -i 'host' | cut -d "=" -f2)
+export API_URL=$API_URL
 sh /usr/local/bin/start-docker.sh

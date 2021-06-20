@@ -1,8 +1,8 @@
-# movies-app
-MERN stack Project implementation  (MongoDB, Express.js, React.js, and Node.js) on Quali's Colony
+# Colony EKS App
+This is a 3 tier app supposed to be deployed with Colony (soon to be Torque) on EKS.
+## Issues
+1.  $colony.applications.movies-api.dns doesn't resolve into API_URL env var of movies-ui app.
+2.  $colony.applications.mongodb.dns doesn't resolve into DB_URL env var of movies-api app
 
-# Introduction
-
-This project is forked from Sam Barros movies-app Github project: https://github.com/samaronybarros/movies-app
-
-![mern](https://miro.medium.com/max/678/1*dqvlaszRLvoPmARpOlLN9A.png)
+## How to check it?
+kubectl exec into the relevant pods and try to read logs with torque.sh logs 

@@ -7,13 +7,14 @@ clouds:
   - AWS/EKS
 applications:
   - movies-ui:
-      depends_on:
-        - movies-api
       input_values:
         - API_URL: $colony.applications.movies-api.dns
+      depends_on:
+        - movies-api
+      
   - movies-api:
       input_values:
-        #- DB_URL: $colony.applications.mongodb.dns
+        - DB_URL: $colony.applications.mongodb.dns
       depends_on:
         - mongodb
   - mongodb:

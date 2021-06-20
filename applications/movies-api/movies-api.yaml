@@ -1,6 +1,6 @@
 kind: application
 inputs:
-  #- DB_URL
+  - DB_URL
 infrastructure:
   connectivity:
     internal:
